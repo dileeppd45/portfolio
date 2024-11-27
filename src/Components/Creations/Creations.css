@@ -1,0 +1,249 @@
+.creations{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  margin-left: 10%;
+  gap: 20px;
+  width: 80%;
+  
+}
+.creations-title{
+  position: relative;
+
+}
+.creations-title h1{
+  text-align: center;
+    padding: 0px 5vw;
+    font-size: 5vw;
+    font-weight: 600;
+  
+}
+.creations-title img{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.9;
+  width: 15vw;
+
+}
+.projects{
+  width: 100%;
+  height: 100vh;
+  overflow:auto;
+  position: relative;
+}
+.projecto{
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1vw 1vw;
+  gap: 2%;
+  
+  
+}
+.projecte{
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1vw 1vw;
+  gap: 2%;
+  
+  
+}
+.projecto .project-left{
+  margin-left: 10%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10vh;
+  border-radius: 20px;
+  border: solid rgb(255, 0, 212);
+  
+}
+.projecte .project-right{
+  margin-right: 10%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10vh;
+  border-radius: 20px;
+  border: solid rgb(255, 0, 212);
+}
+.projecte .project-left{
+  margin-left: 10%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10vh;
+  border-radius: 20px;
+  border: solid rgb(255, 165, 0);
+  
+}
+.projecto .project-right{
+  margin-right: 10%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10vh;
+  border-radius: 20px;
+  border: solid rgb(255, 165, 0);
+}
+.project-title{
+  height: 5.5vh;
+  width: 100%;
+  
+  position: relative;
+  
+}
+.project-title h1{
+ 
+  margin-top: 1vh;
+  margin-left: 1vw;
+  font-size: 3vw;
+  font-weight: 600;
+  overflow: hidden;
+  
+}
+.marquee-container {
+  
+  overflow-x: hidden !important;
+  display: flex !important;
+  flex-direction: row !important;
+  position: relative;
+  width: var(--width);
+  transform: var(--transform);
+
+
+  --pause-on-hover: running; --pause-on-click: running; --width: 100%; --transform: none;
+}
+  .marquee-container:hover div {
+    animation-play-state: var(--pause-on-hover);
+  }
+  .marquee-container:active div {
+    animation-play-state: var(--pause-on-click);
+  }
+  .marquee-container:hover .marquee {
+    animation-play-state: paused;
+  }
+  
+  .marquee-container:active .marquee {
+    animation-play-state: var(--pause-on-click);
+  }
+  
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .overlay::before, .overlay::after {
+    background: linear-gradient(to right, var(--gradient-color));
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: var(--gradient-width);
+    z-index: 2;
+  }
+  .overlay::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+  .overlay::before {
+    left: 0;
+    top: 0;
+  }
+  
+.marquee {
+  
+  flex: 0 0 auto;
+  min-width: var(--min-width);
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
+  animation-play-state: var(--play);
+  animation-delay: var(--delay);
+  animation-direction: var(--direction);
+
+
+  --play: running; --direction: normal; --duration: 17s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;
+}
+
+.marquee::after {
+  content: '';
+  display: block;
+  min-width: 100%; /* Duplicate content */
+}
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .initial-child-container {
+    flex: 0 0 auto;
+    display: flex;
+    min-width: auto;
+    flex-direction: row;
+    
+  }
+  
+  .child {
+    transform: var(--transform);
+    
+    --transform: none;
+  }
+  .child div{
+    margin: 0.5rem; /* 2 x 0.25rem = 0.5rem or 8px */
+  position: relative;
+  display: flex;
+  }
+ 
+
+  .child div img {
+    height: 224px; /* 56 x 4 = 224px */
+    width: 224px; /* 56 x 4 = 224px */
+    object-fit: cover; 
+    /* Ensures the image covers the area */
+    border-radius: 0.75rem; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+
+  .child div img:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    object-fit: contain;
+    width: 500px;
+  }
+ 
+  .project-para{
+    height: 40vh;
+    margin: 2vw;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    font-size: 2vw;
+    font-weight: 500;
+}

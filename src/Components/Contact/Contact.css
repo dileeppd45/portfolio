@@ -1,0 +1,122 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
+    margin: 15vh 10vw;
+    width: 80vw;
+}
+
+.contact-title{
+    position: relative;
+}
+
+.contact-title h1{
+    padding:0px 2vw;
+    font-size: 4vw;
+    font-weight: 600;
+}
+
+.contact-title img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 15vw;
+}
+
+.contact-section{
+    display: flex;
+    gap: 5vw;
+
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-left h1{
+    font-size: 5vw;
+    font-weight: 700;
+    background: linear-gradient(270deg, rgb(240, 189, 6) 50.41%, rgb(232, 16, 149) 90.25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contact-left p{
+    max-width: 25vw;
+    color:whitesmoke;
+    font-size: 1.5vw;
+    line-height: 35px;
+}
+
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: whitesmoke;
+    font-size: 1.5vw;
+
+}
+.contact-detail{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+.contact-detail img{
+    width: 3vw;
+    position: relative;
+    z-index: -1;
+}
+
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+
+.contact-right label{
+    color: whitesmoke;
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+.contact-right input{
+    border: none;
+    width: 40vw;
+    height: 58px;
+    padding-left: 2vw;
+    border-radius: 10px;
+    background: black;
+    color: whitesmoke;
+    font-family: Outfit;
+    font-size: 1vw;
+}
+.contact-right textarea{
+    border: none;
+    width: 38vw;
+    padding: 20px;
+    border-radius: 10px;
+    background: black;
+    color: whitesmoke;
+    font-family: Outfit;
+    font-size: 1vw; 
+}
+
+.contact-submit{
+    border:none;
+    color: white;
+    border-radius: 50px;
+    background: linear-gradient(270deg, rgb(240, 189, 6) 50.41%, rgb(232, 16, 149) 90.25%);
+    font-size: 1.5vw;
+    padding:1vw 2vw;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.contact-submit:hover{
+    transform:scale(1.1);
+    transition:0.3s;
+}

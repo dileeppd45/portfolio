@@ -1,0 +1,40 @@
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2% 5%;
+}
+.navbar img{
+    width: 10%;
+    border-radius:5%;
+    cursor: pointer;
+    opacity: 0.2;
+    z-index: -1;
+    margin-right: 5%;
+}
+
+
+.nav-menu{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 6%;
+    font-size: 1.5vw;
+
+}
+.nav-menu li{
+    cursor: pointer;
+}
+.nav-connect{
+    
+    padding: 1.5% 2%;
+    border-radius: 50px;
+    background: linear-gradient(267deg,rgb(190, 139, 46) 0.36%, rgb(142, 4, 117));
+    font-size: 1.5vw;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.nav-connect:hover{
+    transform:scale(1.05);
+}
