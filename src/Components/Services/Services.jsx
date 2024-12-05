@@ -6,9 +6,9 @@ import Services_Data from '../../assets/services-data'
 
 
 
-const Services = () => {
+const Services = ({setMenu}) => {
   return (
-    <div>
+    <div id='services' onMouseEnter={() => setMenu("services")}>
       <div className="services">
         <div className="services-title">
             <h1>My Services</h1>

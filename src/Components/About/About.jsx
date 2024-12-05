@@ -2,9 +2,9 @@ import React from 'react'
 import './About.css'
 import about_heading from '../../assets/about.png'
 import profile_img from '../../assets/me2.jpg'
-const About = () => {
+const About = ({setMenu}) => {
   return (
-    <div className='about'>
+    <div id='about' className='about' onMouseEnter={() => setMenu("about")}>
       <div className="about-title">
         <h1>About me</h1>
         <img src={about_heading} alt='' />

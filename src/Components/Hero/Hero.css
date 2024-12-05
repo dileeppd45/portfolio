@@ -30,6 +30,9 @@
     font-size: 2vw;
     line-height: 3vw ;
 }
+.hero a{
+    text-decoration: none;
+}
 .hero-action{
     display: flex;
     align-items: center;
@@ -59,4 +62,13 @@
 }
 .hero-resume:hover{
     border-color: blueviolet;
+}
+@media(max-width:750px){
+
+.hero{
+    margin-top: 50px;
+}
+.hero img{
+    display: none;
+}
 }

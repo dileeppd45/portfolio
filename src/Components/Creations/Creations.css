@@ -29,6 +29,8 @@
   width: 15vw;
 
 }
+
+
 .projects{
   width: 100%;
   height: 100vh;
@@ -119,7 +121,6 @@
   font-size: 3vw;
   font-weight: 600;
   overflow: hidden;
-  
 }
 .marquee-container {
   
@@ -247,3 +248,113 @@
     font-size: 2vw;
     font-weight: 500;
 }
+
+@media(max-width:750px){
+  .project-title{
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+
+  }
+  .project-para{
+    height: 40vh;
+    margin: 2px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    font-size: 15px;
+    font-weight: 500;
+}
+  .creations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 10%;
+    gap: 20px;
+    width: 80%;
+    
+  }
+  .projects{
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .projecto{
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1vw 1vw;
+    gap: 2%;
+    
+    
+  }
+  .projecte{
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1vw 1vw;
+    gap: 2%;
+    
+    
+  }
+
+  .projecto .project-left{
+    margin-left: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 20px;
+    border: solid rgb(255, 0, 212);
+    
+  }
+
+  .projecte .project-right{
+    margin-right: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 20px;
+    border: solid rgb(255, 165, 0);
+  }
+
+  .projecte .project-left{
+    margin-left: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 20px;
+    border: solid rgb(255, 0, 212);
+    
+  }
+  .projecto .project-right{
+    margin-right: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 20px;
+    border: solid rgb(255, 165, 0);
+  }
+}
+

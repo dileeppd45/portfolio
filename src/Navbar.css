@@ -84,7 +84,6 @@
         width: 20px;
         box-sizing: border-box;
         cursor: all-scroll;
-        background: whitesmoke;
         z-index: 2;
     }
     .nav-mob-close{
@@ -92,7 +91,7 @@
         position: relative;
         top: 30px;
         left: 100px;
-        width: 30px;
+        width: 100px;
     }
     .nav-menu{
         position: fixed;

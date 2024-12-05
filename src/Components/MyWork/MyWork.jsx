@@ -3,9 +3,10 @@ import './MyWork.css'
 import theme_pattern from '../../assets/about.png'
 import mywork_data from '../../assets/mywork_data'
 import arrow_icon from '../../assets/arrow.png'
-function MyWork() {
+
+function MyWork({setMenu}) {
   return (
-    <div>
+    <div id='projects' onMouseEnter={() => setMenu("portfolio")}>
       <div className="mywork">
         <div className="mywork-title">
             <h1>My Latest Work</h1>

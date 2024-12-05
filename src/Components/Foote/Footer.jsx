@@ -6,7 +6,7 @@ import user_icon from '../../assets/mail_icon.webp'
 
 const footer = () => {
   return (
-    <div>
+    <div id='footer'>
       <div className="footer">
         <div className="footer-top">
             <div className="footer-top-left">

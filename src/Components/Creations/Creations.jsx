@@ -78,25 +78,9 @@ import greenmyorders from '../../assets/projects/green/myorders.png'
 import greennltk from '../../assets/projects/green/nltk.png'
 import greensignin from '../../assets/projects/green/signin.png'
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const Creations = () => {
+const Creations = ({setMenu}) => {
   return ( 
-  <div >
+  <div id='portfolio' onMouseEnter={() => setMenu("projects")}>
         <div className='creations'>
             <div className="creations-title">
                 <h1>Projects</h1>
@@ -687,9 +671,7 @@ const Creations = () => {
                     
                 </div>
             </div>
-            
-            
-            
+
         </div>
   </div>  
 
